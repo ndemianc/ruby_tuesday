@@ -1,0 +1,23 @@
+.rspec
+/log
+/tmp
+/coverage/
+/spec/tmp
+spec/examples.txt
+
+## Environment normalization:
+/.bundle
+/vendor/bundle
+.byebug_history
+dump.rdb
+.idea
+.DS_Store
+.ruby-gemset
+.rspec_status
+
+## IDE specific files
+/.vscode
+
+## Vim
+*.swp
+tags
