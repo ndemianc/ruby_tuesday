@@ -10,7 +10,7 @@ class Computer
   def initialize(computer_id, data_source)
     @id = computer_id
     @data_source = data_source
-    @price = 1
+    @price = 100 # Set it as 100 explicitly
   end
 
   private
