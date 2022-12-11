@@ -7,7 +7,7 @@ describe Computer do
   subject(:result) { described_class.new(id, DS.new) }
 
   let(:info) { 'test' }
-  let(:price) { 50 }
+  let(:price) { 100 }
   let(:id) { 1 }
   let(:ds) do
     instance_double(
@@ -30,7 +30,7 @@ describe Computer do
   describe 'successful' do
     describe '#mouse' do
       let(:ds) { instance_double(DS, get_mouse_info: info, get_mouse_price: price) }
-      let(:output) { '* mouse: test ($50)' }
+      let(:output) { "* mouse: test ($#{price})" }
 
       it 'returns test' do
         expect(result.mouse).to(eq(output))
@@ -39,7 +39,7 @@ describe Computer do
 
     describe '#cpu' do
       let(:ds) { instance_double(DS, get_cpu_info: info, get_cpu_price: price) }
-      let(:output) { '* cpu: test ($50)' }
+      let(:output) { "* cpu: test ($#{price})" }
 
       it 'returns test' do
         expect(result.cpu).to(eq(output))
@@ -48,7 +48,7 @@ describe Computer do
 
     describe '#keyboard' do
       let(:ds) { instance_double(DS, get_keyboard_info: info, get_keyboard_price: price) }
-      let(:output) { '* keyboard: test ($50)' }
+      let(:output) { "* keyboard: test ($#{price})" }
 
       it 'returns test' do
         expect(result.keyboard).to(eq(output))
