@@ -30,3 +30,9 @@ At this point in the development of Computer, you find yourself bogged down in a
 left to deal with, and you should also write tests for each and every method, because it’s easy to make mistakes in duplicated code.
 
 There are two different ways to remove this duplication. Give it a try without any hint first and ask us for a hint if you think it's confusing!
+
+# Solution
+
+## Run Ruby styleguid checks: `bundle exec rubocop`
+
+## Run Rspec unit tests: `bundle exec rspec`

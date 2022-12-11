@@ -1,0 +1,8 @@
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - 'ds.rb'
+
+Metrics/BlockLength:
+  Enabled: false
